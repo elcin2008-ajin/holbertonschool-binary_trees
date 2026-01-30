@@ -33,7 +33,8 @@ size_t binary_tree_height(const binary_tree_t *tree)
  *
  * Return: 1 if perfect, 0 otherwise
  */
-int _binary_tree_is_perfect(const binary_tree_t *tree, size_t height, size_t level)
+int _binary_tree_is_perfect(const binary_tree_t *tree, size_t height,
+		size_t level)
 {
 	if (tree == NULL)
 		return (0);
@@ -48,7 +49,7 @@ int _binary_tree_is_perfect(const binary_tree_t *tree, size_t height, size_t lev
 
 	/* Check subtrees */
 	return (_binary_tree_is_perfect(tree->left, height, level + 1) &&
-	        _binary_tree_is_perfect(tree->right, height, level + 1));
+			_binary_tree_is_perfect(tree->right, height, level + 1));
 }
 
 /**
