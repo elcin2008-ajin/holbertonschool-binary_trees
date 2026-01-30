@@ -30,4 +30,7 @@ void binary_tree_print(const binary_tree_t *tree);
 /* Task 4 */
 int binary_tree_is_leaf(const binary_tree_t *node);
 
+/* Task 5 */
+int binary_tree_is_root(const binary_tree_t *node);
+
 #endif /* BINARY_TREES_H */
